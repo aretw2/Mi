@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ti ❤️</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+
+<section id="bienvenida" class="pantalla activa">
+
+    <h1>Hola ❤️</h1>
+
+    <p>
+        Si estás viendo esto, es porque hay algo que llevo tiempo queriendo decirte.
+        Pero antes quiero que hagamos un pequeño viaje juntas ✨
+    </p>
+
+    <button onclick="siguientePantalla('foto1')">
+        Comenzar ❤️
+    </button>
+
+</section>
+
+<section id="foto1" class="pantalla">
+
+    <img src="foto1.jpg" class="imagen-recuerdo">
+
+    <h2 id="texto1"></h2>
+
+    <button onclick="siguientePantalla('foto2')">
+        Continuar ❤️
+    </button>
+
+</section>
+
+<section id="foto2" class="pantalla">
+
+    <img src="foto2.jpg" class="imagen-recuerdo">
+
+    <h2 id="texto2"></h2>
+
+    <button onclick="siguientePantalla('foto3')">
+        Continuar ❤️
+    </button>
+
+</section>
+
+<section id="foto3" class="pantalla">
+
+    <img src="foto3.jpg" class="imagen-recuerdo">
+
+    <h2 id="texto3"></h2>
+
+    <button onclick="siguientePantalla('foto4')">
+        Continuar ❤️
+    </button>
+
+</section>
+
+<section id="foto4" class="pantalla">
+
+    <img src="foto4.jpg" class="imagen-recuerdo">
+
+    <h2 id="texto4"></h2>
+
+    <button onclick="siguientePantalla('foto5')">
+        Continuar ❤️
+    </button>
+
+</section>
+
+<section id="foto5" class="pantalla">
+
+    <img src="foto5.jpg" class="imagen-recuerdo">
+
+    <h2 id="texto5"></h2>
+
+    <button onclick="siguientePantalla('foto6')">
+        Continuar ❤️
+    </button>
+
+</section>
+
+<section id="foto6" class="pantalla">
+
+    <img src="foto6.jpg" class="imagen-recuerdo">
+
+    <h2 id="texto6"></h2>
+
+    <button onclick="siguientePantalla('stats')">
+        Continuar ❤️
+    </button>
+
+</section>
+
+<section id="stats" class="pantalla">
+
+    <h1>📊 Analizando datos...</h1>
+
+    <pre id="estadisticasTexto"></pre>
+
+    <button onclick="siguientePantalla('carta')">
+        Continuar ❤️
+    </button>
+
+</section>
+
+<section id="carta" class="pantalla">
+
+    <h1>💌 Una Carta Para Ti 💌</h1>
+
+    <div id="textoCarta"></div>
+
+    <button onclick="siguientePantalla('cuenta')">
+        Continuar ❤️
+    </button>
+
+</section>
+
+<section id="cuenta" class="pantalla">
+
+    <h1>⏳ Ya casi llegamos ❤️</h1>
+
+    <div id="contador">10</div>
+
+    <button onclick="iniciarCuenta()">
+        Iniciar Cuenta Regresiva
+    </button>
+
+</section>
+
+<section id="pregunta" class="pantalla">
+
+    <h1 id="textoPregunta">
+
+        ❤️ ¿Puedo ser tu novia? ❤️
+
+    </h1>
+
+    <div class="botones">
+
+        <button id="btnSi" onclick="aceptar()">
+            💖 Sí, me encantaría
+        </button>
+
+        <button id="btnNo" onclick="rechazar()">
+            😅 No
+        </button>
+
+    </div>
+
+</section>
+
+<script src="Script.js"></script>
+
+</body>
+</html>
